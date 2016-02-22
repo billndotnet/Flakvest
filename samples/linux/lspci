@@ -1,0 +1,19 @@
+root@scirocco:/proc# lspci
+00:00.0 Host bridge: Intel Corporation 82875P/E7210 Memory Controller Hub (rev 02)
+00:03.0 PCI bridge: Intel Corporation 82875P/E7210 Processor to PCI to CSA Bridge (rev 02)
+00:06.0 System peripheral: Intel Corporation 82875P/E7210 Processor to I/O Memory Interface (rev 02)
+00:1c.0 PCI bridge: Intel Corporation 6300ESB 64-bit PCI-X Bridge (rev 02)
+00:1d.0 USB Controller: Intel Corporation 6300ESB USB Universal Host Controller (rev 02)
+00:1d.1 USB Controller: Intel Corporation 6300ESB USB Universal Host Controller (rev 02)
+00:1d.4 System peripheral: Intel Corporation 6300ESB Watchdog Timer (rev 02)
+00:1d.5 PIC: Intel Corporation 6300ESB I/O Advanced Programmable Interrupt Controller (rev 02)
+00:1d.7 USB Controller: Intel Corporation 6300ESB USB2 Enhanced Host Controller (rev 02)
+00:1e.0 PCI bridge: Intel Corporation 82801 PCI Bridge (rev 0a)
+00:1f.0 ISA bridge: Intel Corporation 6300ESB LPC Interface Controller (rev 02)
+00:1f.2 IDE interface: Intel Corporation 6300ESB SATA Storage Controller (rev 02)
+00:1f.3 SMBus: Intel Corporation 6300ESB SMBus Controller (rev 02)
+01:01.0 Ethernet controller: Intel Corporation 82547GI Gigabit Ethernet Controller
+02:01.0 RAID bus controller: Adaptec AAC-RAID (rev 01)
+03:02.0 Ethernet controller: Intel Corporation 82541GI Gigabit Ethernet Controller
+03:0e.0 VGA compatible controller: ATI Technologies Inc Rage XL (rev 27)
+

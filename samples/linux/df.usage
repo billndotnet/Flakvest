@@ -1,0 +1,8 @@
+root@scirocco:~# df
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/sda1            237287356 150599540  74634252  67% /
+none                    508308       164    508144   1% /dev
+none                    512912         0    512912   0% /dev/shm
+none                    512912       312    512600   1% /var/run
+none                    512912         0    512912   0% /var/lock
+none                    512912         0    512912   0% /lib/init/rw

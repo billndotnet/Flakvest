@@ -1,0 +1,210 @@
+billn@scirocco:~$ netstat -an 
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:113             0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:53            0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN     
+tcp        0      0 208.111.166.38:3128     0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:3128          0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:25              0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:1723            0.0.0.0:*               LISTEN     
+tcp        0      0 208.111.166.38:52398    208.115.109.53:80       ESTABLISHED
+tcp        0      0 208.111.166.38:52439    208.115.109.53:80       ESTABLISHED
+tcp        0      0 208.111.166.38:52335    208.115.109.53:80       ESTABLISHED
+tcp        0      0 208.111.166.38:52344    208.115.109.53:80       ESTABLISHED
+tcp        0      0 208.111.166.38:52324    208.115.109.53:80       ESTABLISHED
+tcp        0      0 208.111.166.38:52326    208.115.109.53:80       ESTABLISHED
+tcp        0      0 208.111.166.38:52375    208.115.109.53:80       ESTABLISHED
+tcp        0      0 208.111.166.38:22       174.79.52.66:53186      ESTABLISHED
+tcp        0      0 208.111.166.38:52354    208.115.109.53:80       ESTABLISHED
+tcp        0      0 208.111.166.38:52361    208.115.109.53:80       ESTABLISHED
+tcp        0      0 208.111.166.38:52317    208.115.109.53:80       ESTABLISHED
+tcp        0      0 208.111.166.38:37570    217.168.150.39:6667     ESTABLISHED
+tcp        0      0 208.111.166.38:52396    208.115.109.53:80       ESTABLISHED
+tcp        0      0 208.111.166.38:52346    208.115.109.53:80       ESTABLISHED
+tcp        0      0 208.111.166.38:55857    62.76.47.24:80          ESTABLISHED
+tcp        0      0 208.111.166.38:52523    208.115.109.53:80       ESTABLISHED
+tcp        0      0 208.111.166.38:52407    208.115.109.53:80       ESTABLISHED
+tcp        0      0 208.111.166.38:52389    208.115.109.53:80       ESTABLISHED
+tcp6       0      0 192.168.100.10:11211    :::*                    LISTEN     
+tcp6       0      0 :::80                   :::*                    LISTEN     
+tcp6       0      0 192.168.100.10:9200     :::*                    LISTEN     
+tcp6       0      0 192.168.100.10:9300     :::*                    LISTEN     
+tcp6       0      0 :::22                   :::*                    LISTEN     
+tcp6       0      0 :::64738                :::*                    LISTEN     
+tcp6       0      0 192.168.100.10:9300     192.168.100.10:44017    ESTABLISHED
+tcp6       0      0 192.168.100.10:9300     192.168.100.10:44021    ESTABLISHED
+tcp6       0      0 192.168.100.10:9300     192.168.100.10:44024    ESTABLISHED
+tcp6       0      0 192.168.100.10:9300     192.168.100.10:44018    ESTABLISHED
+tcp6       0      0 2607:f4e8:12:667::44024 2610:150:4b0f:::6667    ESTABLISHED
+tcp6       0      0 192.168.100.10:44021    192.168.100.10:9300     ESTABLISHED
+tcp6       0      0 192.168.100.10:44016    192.168.100.10:9300     ESTABLISHED
+tcp6       0      0 192.168.100.10:9300     192.168.100.10:44022    ESTABLISHED
+tcp6       0      0 192.168.100.10:9300     192.168.100.10:44016    ESTABLISHED
+tcp6       0      0 192.168.100.10:44022    192.168.100.10:9300     ESTABLISHED
+tcp6       0      0 192.168.100.10:44019    192.168.100.10:9300     ESTABLISHED
+tcp6       0      0 192.168.100.10:9300     192.168.100.10:44023    ESTABLISHED
+tcp6       0      0 192.168.100.10:44020    192.168.100.10:9300     ESTABLISHED
+tcp6       0      0 192.168.100.10:44024    192.168.100.10:9300     ESTABLISHED
+tcp6       0      0 192.168.100.10:44017    192.168.100.10:9300     ESTABLISHED
+tcp6       0      0 192.168.100.10:44018    192.168.100.10:9300     ESTABLISHED
+tcp6       0      0 192.168.100.10:9300     192.168.100.10:44020    ESTABLISHED
+tcp6       0      0 192.168.100.10:44025    192.168.100.10:9300     ESTABLISHED
+tcp6       0      0 192.168.100.10:9300     192.168.100.10:44025    ESTABLISHED
+tcp6       0      0 192.168.100.10:44023    192.168.100.10:9300     ESTABLISHED
+tcp6       0      0 192.168.100.10:9300     192.168.100.10:44019    ESTABLISHED
+udp        0      0 192.168.100.10:123      0.0.0.0:*                          
+udp        0      0 208.111.166.38:123      0.0.0.0:*                          
+udp        0      0 127.0.0.1:123           0.0.0.0:*                          
+udp        0      0 0.0.0.0:123             0.0.0.0:*                          
+udp        0      0 0.0.0.0:514             0.0.0.0:*                          
+udp        0      0 127.0.0.1:53            0.0.0.0:*                          
+udp        0      0 0.0.0.0:3130            0.0.0.0:*                          
+udp        0      0 0.0.0.0:41681           0.0.0.0:*                          
+udp6       0      0 ::1:123                 :::*                               
+udp6       0      0 fe80::212:3fff:fe24:123 :::*                               
+udp6       0      0 2607:f4e8:12:667:21:123 :::*                               
+udp6       0      0 :::123                  :::*                               
+udp6       0      0 :::54328                :::*                               
+udp6       0      0 :::64738                :::*                               
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  2      [ ACC ]     STREAM     LISTENING     192625691 /var/run/mysqld/mysqld.sock
+unix  2      [ ]         DGRAM                    193409315 /var/run//pdns_recursor.controlsocket
+unix  2      [ ACC ]     STREAM     LISTENING     2395     @/com/ubuntu/upstart
+unix  2      [ ACC ]     STREAM     LISTENING     302390303 private/local
+unix  2      [ ACC ]     STREAM     LISTENING     302390240 public/cleanup
+unix  2      [ ACC ]     STREAM     LISTENING     302390247 private/tlsmgr
+unix  2      [ ]         DGRAM                    2501     @/org/kernel/udev/udevd
+unix  2      [ ACC ]     STREAM     LISTENING     302390307 private/virtual
+unix  2      [ ACC ]     STREAM     LISTENING     302390251 private/rewrite
+unix  2      [ ACC ]     STREAM     LISTENING     302390311 private/lmtp
+unix  2      [ ACC ]     STREAM     LISTENING     302390255 private/bounce
+unix  2      [ ACC ]     STREAM     LISTENING     302390315 private/anvil
+unix  2      [ ACC ]     STREAM     LISTENING     302390259 private/defer
+unix  2      [ ACC ]     STREAM     LISTENING     302390263 private/trace
+unix  2      [ ACC ]     STREAM     LISTENING     302390267 private/verify
+unix  2      [ ACC ]     STREAM     LISTENING     302390271 public/flush
+unix  2      [ ACC ]     STREAM     LISTENING     302390275 private/proxymap
+unix  2      [ ACC ]     STREAM     LISTENING     302390319 private/scache
+unix  2      [ ACC ]     STREAM     LISTENING     302390279 private/smtp
+unix  2      [ ACC ]     STREAM     LISTENING     302390283 private/relay
+unix  2      [ ACC ]     STREAM     LISTENING     302390287 public/showq
+unix  2      [ ACC ]     STREAM     LISTENING     302390291 private/error
+unix  2      [ ACC ]     STREAM     LISTENING     194116032 /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING     302390323 private/maildrop
+unix  2      [ ACC ]     STREAM     LISTENING     192625868 /var/run/nscd/socket
+unix  2      [ ACC ]     STREAM     LISTENING     302390295 private/retry
+unix  2      [ ACC ]     STREAM     LISTENING     3542     /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     302390327 private/uucp
+unix  2      [ ACC ]     STREAM     LISTENING     302390331 private/ifmail
+unix  2      [ ACC ]     STREAM     LISTENING     302390299 private/discard
+unix  2      [ ACC ]     STREAM     LISTENING     302390335 private/bsmtp
+unix  2      [ ACC ]     STREAM     LISTENING     302390339 private/scalemail-backend
+unix  2      [ ACC ]     STREAM     LISTENING     302390343 private/mailman
+unix  3      [ ]         STREAM     CONNECTED     407492850 
+unix  3      [ ]         STREAM     CONNECTED     407492849 
+unix  3      [ ]         STREAM     CONNECTED     407492792 /dev/log
+unix  3      [ ]         STREAM     CONNECTED     407492791 
+unix  3      [ ]         STREAM     CONNECTED     407491162 /dev/log
+unix  3      [ ]         STREAM     CONNECTED     407491161 
+unix  3      [ ]         STREAM     CONNECTED     399115727 /dev/log
+unix  3      [ ]         STREAM     CONNECTED     399115726 
+unix  3      [ ]         STREAM     CONNECTED     303575015 /dev/log
+unix  3      [ ]         STREAM     CONNECTED     303575014 
+unix  3      [ ]         STREAM     CONNECTED     303575004 
+unix  3      [ ]         STREAM     CONNECTED     303575003 
+unix  3      [ ]         STREAM     CONNECTED     303575002 
+unix  3      [ ]         STREAM     CONNECTED     303575001 
+unix  3      [ ]         STREAM     CONNECTED     303575000 
+unix  3      [ ]         STREAM     CONNECTED     303574999 
+unix  3      [ ]         STREAM     CONNECTED     303574998 
+unix  3      [ ]         STREAM     CONNECTED     303574997 
+unix  3      [ ]         STREAM     CONNECTED     303574996 
+unix  3      [ ]         STREAM     CONNECTED     303574995 
+unix  3      [ ]         STREAM     CONNECTED     303574994 
+unix  3      [ ]         STREAM     CONNECTED     303574993 
+unix  3      [ ]         STREAM     CONNECTED     303574992 
+unix  3      [ ]         STREAM     CONNECTED     303574991 
+unix  3      [ ]         STREAM     CONNECTED     303574990 
+unix  3      [ ]         STREAM     CONNECTED     303574989 
+unix  3      [ ]         STREAM     CONNECTED     303574988 
+unix  3      [ ]         STREAM     CONNECTED     303574987 
+unix  3      [ ]         STREAM     CONNECTED     303574986 
+unix  3      [ ]         STREAM     CONNECTED     303574985 
+unix  3      [ ]         STREAM     CONNECTED     303574984 
+unix  3      [ ]         STREAM     CONNECTED     303574983 
+unix  3      [ ]         STREAM     CONNECTED     303574982 
+unix  3      [ ]         STREAM     CONNECTED     303574981 
+unix  3      [ ]         STREAM     CONNECTED     303574980 
+unix  3      [ ]         STREAM     CONNECTED     303574979 
+unix  3      [ ]         STREAM     CONNECTED     303574978 
+unix  3      [ ]         STREAM     CONNECTED     303574977 
+unix  3      [ ]         STREAM     CONNECTED     303574976 
+unix  3      [ ]         STREAM     CONNECTED     303574975 
+unix  3      [ ]         STREAM     CONNECTED     303574974 
+unix  3      [ ]         STREAM     CONNECTED     303574973 
+unix  3      [ ]         STREAM     CONNECTED     303574972 
+unix  3      [ ]         STREAM     CONNECTED     303574971 
+unix  3      [ ]         STREAM     CONNECTED     303574970 
+unix  3      [ ]         STREAM     CONNECTED     303574969 
+unix  3      [ ]         STREAM     CONNECTED     303574968 
+unix  3      [ ]         STREAM     CONNECTED     303574967 
+unix  3      [ ]         STREAM     CONNECTED     303574966 
+unix  3      [ ]         STREAM     CONNECTED     303574965 
+unix  3      [ ]         STREAM     CONNECTED     303574964 
+unix  3      [ ]         STREAM     CONNECTED     303574963 
+unix  3      [ ]         STREAM     CONNECTED     303574962 
+unix  3      [ ]         STREAM     CONNECTED     303574961 
+unix  3      [ ]         STREAM     CONNECTED     303574960 
+unix  3      [ ]         STREAM     CONNECTED     303574959 
+unix  3      [ ]         STREAM     CONNECTED     303574958 
+unix  3      [ ]         STREAM     CONNECTED     303574957 
+unix  3      [ ]         STREAM     CONNECTED     303574956 
+unix  3      [ ]         STREAM     CONNECTED     303574955 
+unix  3      [ ]         STREAM     CONNECTED     303574954 
+unix  3      [ ]         STREAM     CONNECTED     303574953 
+unix  3      [ ]         STREAM     CONNECTED     303574952 
+unix  3      [ ]         STREAM     CONNECTED     303574951 
+unix  3      [ ]         STREAM     CONNECTED     303574950 
+unix  3      [ ]         STREAM     CONNECTED     303574949 
+unix  3      [ ]         STREAM     CONNECTED     303574948 
+unix  3      [ ]         STREAM     CONNECTED     303574947 
+unix  3      [ ]         STREAM     CONNECTED     302390214 /dev/log
+unix  3      [ ]         STREAM     CONNECTED     302390213 
+unix  3      [ ]         STREAM     CONNECTED     246868520 /dev/log
+unix  3      [ ]         STREAM     CONNECTED     246868519 
+unix  3      [ ]         STREAM     CONNECTED     194260559 /dev/log
+unix  3      [ ]         STREAM     CONNECTED     194260558 
+unix  3      [ ]         STREAM     CONNECTED     194178570 /dev/log
+unix  3      [ ]         STREAM     CONNECTED     194178569 
+unix  3      [ ]         STREAM     CONNECTED     194116201 /dev/log
+unix  3      [ ]         STREAM     CONNECTED     194116200 
+unix  2      [ ]         STREAM     CONNECTED     193666082 
+unix  2      [ ]         STREAM     CONNECTED     193058256 
+unix  2      [ ]         STREAM     CONNECTED     192069326 
+unix  2      [ ]         STREAM     CONNECTED     184703276 
+unix  2      [ ]         STREAM     CONNECTED     184666066 
+unix  2      [ ]         STREAM     CONNECTED     9537     
+unix  3      [ ]         STREAM     CONNECTED     8682     
+unix  3      [ ]         STREAM     CONNECTED     8681     
+unix  3      [ ]         STREAM     CONNECTED     8680     
+unix  3      [ ]         STREAM     CONNECTED     8679     
+unix  3      [ ]         STREAM     CONNECTED     8246     
+unix  3      [ ]         STREAM     CONNECTED     8245     
+unix  3      [ ]         STREAM     CONNECTED     8113     
+unix  3      [ ]         STREAM     CONNECTED     8112     
+unix  3      [ ]         STREAM     CONNECTED     8060     
+unix  3      [ ]         STREAM     CONNECTED     8059     
+unix  3      [ ]         STREAM     CONNECTED     8058     
+unix  3      [ ]         STREAM     CONNECTED     8057     
+unix  3      [ ]         STREAM     CONNECTED     3558     /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     3557     
+unix  3      [ ]         STREAM     CONNECTED     3547     
+unix  3      [ ]         STREAM     CONNECTED     3546     
+unix  3      [ ]         DGRAM                    2533     
+unix  3      [ ]         DGRAM                    2532     
+unix  3      [ ]         STREAM     CONNECTED     2483     @/com/ubuntu/upstart
+unix  3      [ ]         STREAM     CONNECTED     2482     
+

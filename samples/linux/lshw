@@ -1,0 +1,680 @@
+root@scirocco:/proc# lshw
+PCI (sysfs)  
+
+
+scirocco                  
+    description: Rack Mount Chassis
+    product: PowerEdge 750
+    vendor: Dell Computer Corporation
+    serial: 1X33C71
+    width: 32 bits
+    capabilities: smbios-2.3 dmi-2.3 smp-1.4 smp
+    configuration: boot=normal chassis=rackmount cpus=1 uuid=44454C4C-5800-1033-8033-B1C04F433731
+  *-core
+       description: Motherboard
+       product: 0R1479
+       vendor: Dell Computer Corporation
+       physical id: 0
+       version: A03
+       serial: ..CN717035390865.
+     *-firmware
+          description: BIOS
+          vendor: Dell Computer Corporation
+          physical id: 0
+          version: A04 (02/16/2005)
+          size: 64KiB
+          capacity: 960KiB
+          capabilities: isa pci pnp upgrade shadowing escd cdboot bootselect edd int13floppytoshiba int13floppy360 int13floppy1200 int13floppy720 int9keyboard int14serial int10video acpi usb biosbootspecification netboot
+     *-cpu
+          description: CPU
+          product: Intel(R) Pentium(R) 4 CPU 2.80GHz
+          vendor: Intel Corp.
+          physical id: 400
+          bus info: cpu@0
+          version: 15.4.1
+          serial: 0000-0F41-0000-0000-0000-0000
+          slot: PROC1
+          size: 2800MHz
+          capacity: 4GHz
+          width: 32 bits
+          clock: 800MHz
+          capabilities: boot fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe constant_tsc pebs bts pni dtes64 monitor ds_cpl cid xtpr
+          configuration: id=0
+        *-cache:0
+             description: L1 cache
+             physical id: 700
+             size: 16KiB
+             capacity: 16KiB
+             capabilities: internal write-back data
+        *-cache:1
+             description: L2 cache
+             physical id: 701
+             size: 1MiB
+             capacity: 1MiB
+             capabilities: internal varies unified
+        *-logicalcpu:0
+             description: Logical CPU
+             physical id: 0.1
+             width: 32 bits
+             capabilities: logical
+        *-logicalcpu:1
+             description: Logical CPU
+             physical id: 0.2
+             width: 32 bits
+             capabilities: logical
+     *-memory
+          description: System Memory
+          physical id: 1000
+          slot: System board or motherboard
+          size: 1GiB
+        *-bank:0
+             description: DIMM DDR Synchronous 400 MHz (2.5 ns)
+             physical id: 0
+             slot: DIMM1_A
+             size: 512MiB
+             width: 64 bits
+             clock: 400MHz (2.5ns)
+        *-bank:1
+             description: DIMM DDR Synchronous 400 MHz (2.5 ns) [empty]
+             physical id: 1
+             slot: DIMM2_A
+             width: 64 bits
+             clock: 400MHz (2.5ns)
+        *-bank:2
+             description: DIMM DDR Synchronous 400 MHz (2.5 ns)
+             physical id: 2
+             slot: DIMM1_B
+             size: 512MiB
+             width: 64 bits
+             clock: 400MHz (2.5ns)
+        *-bank:3
+             description: DIMM DDR Synchronous 400 MHz (2.5 ns) [empty]
+             physical id: 3
+             slot: DIMM2_B
+             width: 64 bits
+             clock: 400MHz (2.5ns)
+     *-generic:0 UNCLAIMED
+          physical id: 1
+          bus info: parisc@1
+     *-generic:1 UNCLAIMED
+          physical id: 10
+          bus info: parisc@10
+     *-generic:2 UNCLAIMED
+          physical id: 10403
+          bus info: parisc@10403
+     *-generic:3 UNCLAIMED
+          physical id: 11
+          bus info: parisc@11
+     *-generic:4 UNCLAIMED
+          physical id: 12
+          bus info: parisc@12
+     *-generic:5 UNCLAIMED
+          physical id: 13
+          bus info: parisc@13
+     *-generic:6 UNCLAIMED
+          physical id: 13790
+          bus info: parisc@13790
+     *-generic:7 UNCLAIMED
+          physical id: 13871
+          bus info: parisc@13871
+     *-generic:8 UNCLAIMED
+          physical id: 14
+          bus info: parisc@14
+     *-generic:9 UNCLAIMED
+          physical id: 14792
+          bus info: parisc@14792
+     *-generic:10 UNCLAIMED
+          physical id: 15
+          bus info: parisc@15
+     *-generic:11 UNCLAIMED
+          physical id: 16944
+          bus info: parisc@16944
+     *-generic:12 UNCLAIMED
+          physical id: 17
+          bus info: parisc@17
+     *-generic:13 UNCLAIMED
+          physical id: 17369
+          bus info: parisc@17369
+     *-generic:14 UNCLAIMED
+          physical id: 17370
+          bus info: parisc@17370
+     *-generic:15 UNCLAIMED
+          physical id: 17371
+          bus info: parisc@17371
+     *-generic:16 UNCLAIMED
+          physical id: 17373
+          bus info: parisc@17373
+     *-generic:17 UNCLAIMED
+          physical id: 17506
+          bus info: parisc@17506
+     *-generic:18 UNCLAIMED
+          physical id: 17507
+          bus info: parisc@17507
+     *-generic:19 UNCLAIMED
+          physical id: 18
+          bus info: parisc@18
+     *-generic:20 UNCLAIMED
+          physical id: 1897
+          bus info: parisc@1897
+     *-generic:21 UNCLAIMED
+          physical id: 19
+          bus info: parisc@19
+     *-generic:22 UNCLAIMED
+          physical id: 192
+          bus info: parisc@192
+     *-generic:23 UNCLAIMED
+          physical id: 193
+          bus info: parisc@193
+     *-generic:24 UNCLAIMED
+          physical id: 194
+          bus info: parisc@194
+     *-generic:25 UNCLAIMED
+          physical id: 19680
+          bus info: parisc@19680
+     *-generic:26 UNCLAIMED
+          physical id: 1975
+          bus info: parisc@1975
+     *-generic:27 UNCLAIMED
+          physical id: 1976
+          bus info: parisc@1976
+     *-generic:28 UNCLAIMED
+          physical id: 2
+          bus info: parisc@2
+     *-generic:29 UNCLAIMED
+          physical id: 20
+          bus info: parisc@20
+     *-generic:30 UNCLAIMED
+          physical id: 20657
+          bus info: parisc@20657
+     *-generic:31 UNCLAIMED
+          physical id: 20725
+          bus info: parisc@20725
+     *-generic:32 UNCLAIMED
+          physical id: 20726
+          bus info: parisc@20726
+     *-generic:33 UNCLAIMED
+          physical id: 21
+          bus info: parisc@21
+     *-generic:34 UNCLAIMED
+          physical id: 21574
+          bus info: parisc@21574
+     *-generic:35 UNCLAIMED
+          physical id: 21690
+          bus info: parisc@21690
+     *-generic:36 UNCLAIMED
+          physical id: 22
+          bus info: parisc@22
+     *-generic:37 UNCLAIMED
+          physical id: 2201
+          bus info: parisc@2201
+     *-generic:38 UNCLAIMED
+          physical id: 22040
+          bus info: parisc@22040
+     *-generic:39 UNCLAIMED
+          physical id: 2250
+          bus info: parisc@2250
+     *-generic:40 UNCLAIMED
+          physical id: 22861
+          bus info: parisc@22861
+     *-generic:41 UNCLAIMED
+          physical id: 22862
+          bus info: parisc@22862
+     *-generic:42 UNCLAIMED
+          physical id: 22863
+          bus info: parisc@22863
+     *-generic:43 UNCLAIMED
+          physical id: 22864
+          bus info: parisc@22864
+     *-generic:44 UNCLAIMED
+          physical id: 23
+          bus info: parisc@23
+     *-generic:45 UNCLAIMED
+          physical id: 232
+          bus info: parisc@232
+     *-generic:46 UNCLAIMED
+          physical id: 24
+          bus info: parisc@24
+     *-generic:47 UNCLAIMED
+          physical id: 2401
+          bus info: parisc@2401
+     *-generic:48 UNCLAIMED
+          physical id: 24109
+          bus info: parisc@24109
+     *-generic:49 UNCLAIMED
+          physical id: 25
+          bus info: parisc@25
+     *-generic:50 UNCLAIMED
+          physical id: 26
+          bus info: parisc@26
+     *-generic:51 UNCLAIMED
+          physical id: 26187
+          bus info: parisc@26187
+     *-generic:52 UNCLAIMED
+          physical id: 27
+          bus info: parisc@27
+     *-generic:53 UNCLAIMED
+          physical id: 273
+          bus info: parisc@273
+     *-generic:54 UNCLAIMED
+          physical id: 2768
+          bus info: parisc@2768
+     *-generic:55 UNCLAIMED
+          physical id: 277
+          bus info: parisc@277
+     *-generic:56 UNCLAIMED
+          physical id: 28
+          bus info: parisc@28
+     *-generic:57 UNCLAIMED
+          physical id: 28341
+          bus info: parisc@28341
+     *-generic:58 UNCLAIMED
+          physical id: 28420
+          bus info: parisc@28420
+     *-generic:59 UNCLAIMED
+          physical id: 28421
+          bus info: parisc@28421
+     *-generic:60 UNCLAIMED
+          physical id: 28504
+          bus info: parisc@28504
+     *-generic:61 UNCLAIMED
+          physical id: 28729
+          bus info: parisc@28729
+     *-generic:62 UNCLAIMED
+          physical id: 28828
+          bus info: parisc@28828
+     *-generic:63 UNCLAIMED
+          physical id: 29
+          bus info: parisc@29
+     *-generic:64 UNCLAIMED
+          physical id: 3
+          bus info: parisc@3
+     *-generic:65 UNCLAIMED
+          physical id: 30
+          bus info: parisc@30
+     *-generic:66 UNCLAIMED
+          physical id: 30219
+          bus info: parisc@30219
+     *-generic:67 UNCLAIMED
+          physical id: 30614
+          bus info: parisc@30614
+     *-generic:68 UNCLAIMED
+          physical id: 30740
+          bus info: parisc@30740
+     *-generic:69 UNCLAIMED
+          physical id: 31
+          bus info: parisc@31
+     *-generic:70 UNCLAIMED
+          physical id: 32
+          bus info: parisc@32
+     *-generic:71 UNCLAIMED
+          physical id: 3200
+          bus info: parisc@3200
+     *-generic:72 UNCLAIMED
+          physical id: 35
+          bus info: parisc@35
+     *-generic:73 UNCLAIMED
+          physical id: 36
+          bus info: parisc@36
+     *-generic:74 UNCLAIMED
+          physical id: 37
+          bus info: parisc@37
+     *-generic:75 UNCLAIMED
+          physical id: 3770
+          bus info: parisc@3770
+     *-generic:76 UNCLAIMED
+          physical id: 38
+          bus info: parisc@38
+     *-generic:77 UNCLAIMED
+          physical id: 39
+          bus info: parisc@39
+     *-generic:78 UNCLAIMED
+          physical id: 4
+          bus info: parisc@4
+     *-generic:79 UNCLAIMED
+          physical id: 40
+          bus info: parisc@40
+     *-generic:80 UNCLAIMED
+          physical id: 41
+          bus info: parisc@41
+     *-generic:81 UNCLAIMED
+          physical id: 42
+          bus info: parisc@42
+     *-generic:82 UNCLAIMED
+          physical id: 46
+          bus info: parisc@46
+     *-generic:83 UNCLAIMED
+          physical id: 47
+          bus info: parisc@47
+     *-generic:84 UNCLAIMED
+          physical id: 496
+          bus info: parisc@496
+     *-generic:85 UNCLAIMED
+          physical id: 498
+          bus info: parisc@498
+     *-generic:86 UNCLAIMED
+          physical id: 5
+          bus info: parisc@5
+     *-generic:87 UNCLAIMED
+          physical id: 50
+          bus info: parisc@50
+     *-generic:88 UNCLAIMED
+          physical id: 51
+          bus info: parisc@51
+     *-generic:89 UNCLAIMED
+          physical id: 52
+          bus info: parisc@52
+     *-generic:90 UNCLAIMED
+          physical id: 53
+          bus info: parisc@53
+     *-generic:91 UNCLAIMED
+          physical id: 54
+          bus info: parisc@54
+     *-generic:92 UNCLAIMED
+          physical id: 55
+          bus info: parisc@55
+     *-generic:93 UNCLAIMED
+          physical id: 56
+          bus info: parisc@56
+     *-generic:94 UNCLAIMED
+          physical id: 57
+          bus info: parisc@57
+     *-generic:95 UNCLAIMED
+          physical id: 58
+          bus info: parisc@58
+     *-generic:96 UNCLAIMED
+          physical id: 6
+          bus info: parisc@6
+     *-generic:97 UNCLAIMED
+          physical id: 6723
+          bus info: parisc@6723
+     *-generic:98 UNCLAIMED
+          physical id: 7
+          bus info: parisc@7
+     *-generic:99 UNCLAIMED
+          physical id: 785
+          bus info: parisc@785
+     *-generic:100 UNCLAIMED
+          physical id: 798
+          bus info: parisc@798
+     *-generic:101 UNCLAIMED
+          physical id: 8
+          bus info: parisc@8
+     *-generic:102 UNCLAIMED
+          physical id: 8619
+          bus info: parisc@8619
+     *-generic:103 UNCLAIMED
+          physical id: 9
+          bus info: parisc@9
+     *-generic:104 UNCLAIMED
+          physical id: 907
+          bus info: parisc@907
+     *-generic:105 UNCLAIMED
+          physical id: 911
+          bus info: parisc@911
+     *-generic:106 UNCLAIMED
+          physical id: 928
+          bus info: parisc@928
+     *-generic:107 UNCLAIMED
+          physical id: 930
+          bus info: parisc@930
+     *-generic:108 UNCLAIMED
+          physical id: 946
+          bus info: parisc@946
+     *-generic:109 UNCLAIMED
+          physical id: 9927
+          bus info: parisc@9927
+     *-generic:110 UNCLAIMED
+          physical id: 9928
+          bus info: parisc@9928
+     *-generic:111 UNCLAIMED
+          physical id: 9930
+          bus info: parisc@9930
+     *-generic:112 UNCLAIMED
+          physical id: 9931
+          bus info: parisc@9931
+     *-pci
+          description: Host bridge
+          product: 82875P/E7210 Memory Controller Hub
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 02
+          width: 32 bits
+          clock: 33MHz
+          configuration: driver=agpgart-intel
+          resources: irq:0 memory:f8000000-f83fffff(prefetchable)
+        *-pci:0
+             description: PCI bridge
+             product: 82875P/E7210 Processor to PCI to CSA Bridge
+             vendor: Intel Corporation
+             physical id: 3
+             bus info: pci@0000:00:03.0
+             version: 02
+             width: 32 bits
+             clock: 66MHz
+             capabilities: pci bus_master
+             resources: ioport:e000(size=4096) memory:fe200000-fe3fffff
+           *-network
+                description: Ethernet interface
+                product: 82547GI Gigabit Ethernet Controller
+                vendor: Intel Corporation
+                physical id: 1
+                bus info: pci@0000:01:01.0
+                logical name: eth0
+                version: 00
+                serial: 00:12:3f:24:e6:de
+                size: 1GB/s
+                capacity: 1GB/s
+                width: 32 bits
+                clock: 66MHz
+                capabilities: pm bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=e1000 driverversion=7.3.21-k5-NAPI duplex=full firmware=N/A ip=208.111.166.38 latency=0 link=yes mingnt=255 multicast=yes port=twisted pair speed=1GB/s
+                resources: irq:18 memory:fe2e0000-fe2fffff ioport:ece0(size=32)
+        *-generic:0 UNCLAIMED
+             description: System peripheral
+             product: 82875P/E7210 Processor to I/O Memory Interface
+             vendor: Intel Corporation
+             physical id: 6
+             bus info: pci@0000:00:06.0
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+             resources: memory:fecf0000-fecf0fff
+        *-pci:1
+             description: PCI bridge
+             product: 6300ESB 64-bit PCI-X Bridge
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: 02
+             width: 32 bits
+             clock: 66MHz
+             capabilities: pci pcix bus_master cap_list
+             resources: memory:fe100000-fe1fffff ioport:f4000000(size=67108864)
+           *-storage
+                description: RAID bus controller
+                product: AAC-RAID
+                vendor: Adaptec
+                physical id: 1
+                bus info: pci@0000:02:01.0
+                logical name: scsi2
+                version: 01
+                width: 32 bits
+                clock: 66MHz
+                capabilities: storage pm bus_master cap_list rom emulated
+                configuration: driver=aacraid latency=32 maxlatency=1 mingnt=1
+                resources: irq:24 memory:f4000000-f7ffffff(prefetchable) memory:fe100000-fe107fff(prefetchable)
+              *-disk:0
+                   description: SCSI Disk
+                   physical id: 0.0.0
+                   bus info: scsi@2:0.0.0
+                   logical name: /dev/sda
+                   size: 232GiB (249GB)
+                   capabilities: partitioned partitioned:dos
+                   configuration: signature=3d9cd56a
+                 *-volume:0
+                      description: EXT3 volume
+                      vendor: Linux
+                      physical id: 1
+                      bus info: scsi@2:0.0.0,1
+                      logical name: /dev/sda1
+                      logical name: /
+                      version: 1.0
+                      serial: 82b4e7c5-321f-4436-b394-b201947bb9fe
+                      size: 229GiB
+                      capacity: 229GiB
+                      capabilities: primary bootable journaled large_files recover ext3 ext2 initialized
+                      configuration: created=2008-01-26 16:03:28 filesystem=ext3 modified=2012-06-25 22:10:17 mount.fstype=ext3 mount.options=rw,relatime,errors=remount-ro,data=ordered mounted=2012-07-03 18:25:59 state=mounted
+                 *-volume:1
+                      description: Extended partition
+                      physical id: 2
+                      bus info: scsi@2:0.0.0,2
+                      logical name: /dev/sda2
+                      size: 2957MiB
+                      capacity: 2957MiB
+                      capabilities: primary extended partitioned partitioned:extended
+                    *-logicalvolume
+                         description: Linux swap / Solaris partition
+                         physical id: 5
+                         logical name: /dev/sda5
+                         capacity: 2957MiB
+                         capabilities: nofs
+              *-disk:1 UNCLAIMED
+                   description: SCSI Disk
+                   physical id: 1.0.0
+                   bus info: scsi@2:1.0.0
+              *-disk:2 UNCLAIMED
+                   description: SCSI Disk
+                   physical id: 1.1.0
+                   bus info: scsi@2:1.1.0
+        *-usb:0
+             description: USB Controller
+             product: 6300ESB USB Universal Host Controller
+             vendor: Intel Corporation
+             physical id: 1d
+             bus info: pci@0000:00:1d.0
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:16 ioport:cce0(size=32)
+        *-usb:1
+             description: USB Controller
+             product: 6300ESB USB Universal Host Controller
+             vendor: Intel Corporation
+             physical id: 1d.1
+             bus info: pci@0000:00:1d.1
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:19 ioport:ccc0(size=32)
+        *-generic:1 UNCLAIMED
+             description: System peripheral
+             product: 6300ESB Watchdog Timer
+             vendor: Intel Corporation
+             physical id: 1d.4
+             bus info: pci@0000:00:1d.4
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+             resources: memory:fe400400-fe40040f
+        *-generic:2 UNCLAIMED
+             description: PIC
+             product: 6300ESB I/O Advanced Programmable Interrupt Controller
+             vendor: Intel Corporation
+             physical id: 1d.5
+             bus info: pci@0000:00:1d.5
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pcix bus_master cap_list
+             configuration: latency=0
+        *-usb:2
+             description: USB Controller
+             product: 6300ESB USB2 Enhanced Host Controller
+             vendor: Intel Corporation
+             physical id: 1d.7
+             bus info: pci@0000:00:1d.7
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug bus_master cap_list
+             configuration: driver=ehci_hcd latency=0
+             resources: irq:23 memory:fe400000-fe4003ff
+        *-pci:2
+             description: PCI bridge
+             product: 82801 PCI Bridge
+             vendor: Intel Corporation
+             physical id: 1e
+             bus info: pci@0000:00:1e.0
+             version: 0a
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci bus_master
+             resources: ioport:d000(size=4096) memory:fc000000-fdffffff memory:40000000-400fffff(prefetchable)
+           *-network
+                description: Ethernet interface
+                product: 82541GI Gigabit Ethernet Controller
+                vendor: Intel Corporation
+                physical id: 2
+                bus info: pci@0000:03:02.0
+                logical name: eth1
+                version: 00
+                serial: 00:12:3f:24:e6:df
+                capacity: 1GB/s
+                width: 32 bits
+                clock: 66MHz
+                capabilities: pm pcix bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=e1000 driverversion=7.3.21-k5-NAPI firmware=N/A ip=192.168.100.10 latency=32 link=no mingnt=255 multicast=yes port=twisted pair
+                resources: irq:21 memory:fdee0000-fdefffff ioport:dcc0(size=64)
+           *-display UNCLAIMED
+                description: VGA compatible controller
+                product: Rage XL
+                vendor: ATI Technologies Inc
+                physical id: e
+                bus info: pci@0000:03:0e.0
+                version: 27
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pm bus_master vga_palette cap_list
+                configuration: latency=32 mingnt=8
+                resources: memory:fc000000-fcffffff ioport:d800(size=256) memory:fdedf000-fdedffff memory:40000000-4001ffff(prefetchable)
+        *-isa
+             description: ISA bridge
+             product: 6300ESB LPC Interface Controller
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master
+             configuration: latency=0
+        *-ide
+             description: IDE interface
+             product: 6300ESB SATA Storage Controller
+             vendor: Intel Corporation
+             physical id: 1f.2
+             bus info: pci@0000:00:1f.2
+             version: 02
+             width: 32 bits
+             clock: 66MHz
+             capabilities: ide bus_master
+             configuration: driver=ata_piix latency=0
+             resources: irq:0 ioport:1f0(size=8) ioport:3f6 ioport:170(size=8) ioport:376 ioport:fea0(size=16)
+        *-serial UNCLAIMED
+             description: SMBus
+             product: 6300ESB SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+             resources: ioport:8c0(size=32)

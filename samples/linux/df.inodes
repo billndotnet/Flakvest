@@ -1,0 +1,9 @@
+root@scirocco:~# df -i
+Filesystem            Inodes   IUsed   IFree IUse% Mounted on
+/dev/sda1            30146560  251766 29894794    1% /
+none                  127077     577  126500    1% /dev
+none                  128228       1  128227    1% /dev/shm
+none                  128228      71  128157    1% /var/run
+none                  128228       4  128224    1% /var/lock
+none                  128228       1  128227    1% /lib/init/rw
+

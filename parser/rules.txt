@@ -1,0 +1,67 @@
+Rule files use a YAML structure.
+
+As the parser is Perl based, token extraction using parenthesis is leveraged heavily throughout the rules definitions. 
+Familiarity with Perl regex syntax is recommended before embarking on this exercise.
+
+Top level directives:
+
+command: Instruct the agent to issue this command to solicit output for which these rules are written.
+objects: A multi-level construct defining parser regexp and tokenization instructions for defined object types.
+
+'objects' directives:
+The first tier within object directives identifies/creates object 'types'. This label is arbitrary and determined by 
+the rules developer. It's helpful if they're descriptive/meaningful, and some amount of care and preparation should 
+be taken when defining them. Consistency and portability will save you a lot of hassle down the road.
+
+The following example is for OSX ifconfig output, and documentation will refer to it.
+
+objects:
+  interface:
+    start: ^(\w+):\s+flags=(\S+) mtu (\d+)
+    end: ^(\w+):\s+flags
+    tokens:
+      - name
+      - flags
+      - mtu
+    lastIsNext: 1
+    discardLast: 0
+    properties:
+      '^inet (\S+) netmask (\S+)':
+        tokens:
+          - ipAddressV4
+          - netmaskV4
+      '^inet6 (\S+)\% prefixlen (\d+)':
+        tokens:
+          - ipAddressV6
+          - prefixLength
+      'status: (\S+)':
+        tokens:
+          - status
+        xlate:
+          status:
+            inactive: 0
+            active: 1  
+      'ether (\S+)':
+        tokens:
+          - macAddress
+        transform:
+          macAddress: s/://g
+
+There are two types of matching options, stanza/block style, and single line matches. 
+
+A stanza/block style will be a block of text that marks the beginning and end of a block of data which comprises 
+your object. This type of match requires two specific subdirectives: start and end. 
+
+A single line match uses a single subdirective: match
+
+Anytime a regexp match is invoked, a 'tokens' section can be added, using YAML array syntax, to name the extracted
+data. If it is not present, the first extracted token will be assigned to the only special variable, 'name', which
+is used to identify/differentiate the object from others of the same type.
+
+'properties' directives:
+  tokens: in the same manner as parent object token names are assigned, a tokens array provides one-to-one naming for
+    data extracted from an object entry.
+  xlate: Referring to an object entry by name, an xlate set accepts an enumerated list of values to convert them to.
+    This is used to normalize data to a common form to simplify development against extracted objects.
+  transform: applies a Perl transform regexp, substituting or modifying values.
+

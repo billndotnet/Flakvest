@@ -1,0 +1,47 @@
+root@scirocco:/proc# more meminfo 
+MemTotal:        1025828 kB
+MemFree:          137980 kB
+Buffers:          214212 kB
+Cached:           190808 kB
+SwapCached:         9916 kB
+Active:           207756 kB
+Inactive:         258644 kB
+Active(anon):       7400 kB
+Inactive(anon):    65492 kB
+Active(file):     200356 kB
+Inactive(file):   193152 kB
+Unevictable:      358116 kB
+Mlocked:          358116 kB
+HighTotal:        136968 kB
+HighFree:            228 kB
+LowTotal:         888860 kB
+LowFree:          137752 kB
+SwapTotal:       3028212 kB
+SwapFree:        2924328 kB
+Dirty:                40 kB
+Writeback:             0 kB
+AnonPages:        416032 kB
+Mapped:            25980 kB
+Shmem:               104 kB
+Slab:              48144 kB
+SReclaimable:      39924 kB
+SUnreclaim:         8220 kB
+KernelStack:        1744 kB
+PageTables:         4192 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     3541124 kB
+Committed_AS:    1070988 kB
+VmallocTotal:     122880 kB
+VmallocUsed:        5080 kB
+VmallocChunk:     110072 kB
+HardwareCorrupted:     0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       10232 kB
+DirectMap2M:      901120 kB
+

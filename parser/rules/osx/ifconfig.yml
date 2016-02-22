@@ -1,0 +1,32 @@
+---
+command: ifconfig -a
+objects:
+  interface:
+    start: ^\s*(\w+):\s+flags=(\S+) mtu (\d+)
+    end: ^\s*(\w+):\s+flags
+    tokens:
+      - name
+      - flags
+      - mtu
+    lastIsNext: 1
+    properties:
+      '^inet (\S+) netmask (\S+)':
+        tokens:
+          - ipAddressV4
+          - netmaskV4
+      '^inet6 (\S+)\% prefixlen (\d+)':
+        tokens:
+          - ipAddressV6
+          - prefixLength
+      '^\s*status: (\S+)':
+        tokens:
+          - status
+        xlate:
+          status:
+            inactive: 0
+            active: 1  
+      '^\s*ether (\S+)':
+        tokens:
+          - macAddress
+        transform:
+          macAddress: s/://g

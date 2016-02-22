@@ -1,0 +1,25 @@
+---
+command: show chassis
+objects:
+  powerSupply:
+    match: ^Power (\d+): \((\S+ - (\w+) (\S+)\): (.*)
+    tokens:
+      - name
+      - powerSupplyPartNo
+      - currentType
+      - wattage
+      - status
+  chassisPowerBudget:
+    match: ^Total power budget for chassis = (\d+) W
+  systemCorePowerUsage:
+    match: ^Total power used by system core = (\d+) W
+  lpCardPowerUsage:
+    match: ^Total power used by LPs = (\d+) W
+  totalPowerAvailable:
+    match: ^Total power available = (\d+) W
+  lineCard:
+    match: ^Slot(\d+) pri=\d+ module type=.* power usage=(\d+)W
+    tokens:
+      - name
+      - moduleType
+      - powerDraw

@@ -1,0 +1,83 @@
+---
+command: show running-config
+objects:
+  hostname:
+    match: ^hostname (\S+)
+    tokens:
+      - name
+  logging:
+    match: ^logging (\S+) (\S+)
+    tokens:
+      - key
+      - value
+  ntp:
+    match: ^ntp (\S+) (\S+)
+    tokens:
+      - key
+      - value
+  snmp-server:
+    start:  ^(snmp-server)
+    end: ^!
+    tokens:
+      - name
+    properties:
+      'snmp-server community (\S+) (\S+)':
+         tokens:
+           - communityString
+           - mode
+  interface:
+    start: ^interface (\S+)
+    end: ^!
+    tokens:
+      - name
+    properties:
+      '(shutdown)':
+        tokens:
+          - disabled
+      'description (.*)':
+        tokens:
+          - ifLabel
+      'mlag (\D+)':
+        tokens:
+          - mlagID
+      'spanning-tree (portfast)':
+        tokens:
+          - spanningTreePortfast
+      'switchport mode (\S+)':
+        tokens:
+          - switchPortMode
+      'switchport access vlan (\d+)':
+        tokens:
+          - switchPortAccessGroup
+      'switchport trunk group (\S+)':
+        tokens:
+          - switchPortTrunkGroup
+  user:
+    match: ^username (\S+) privilege (\d+)
+    tokens:
+      - name
+      - privilege
+  vlan:
+    start: ^vlan (\d+)
+    end: ^!
+    tokens:
+      - vlanId
+    lastIsNext: 0
+    properties:
+      '^trunk group (\S+)':
+        tokens:
+          - trunkGroup
+      '^name (\S+)':
+        tokens:
+          - vlanName
+  access-list:
+    start: ^ip access-list (\S+)
+    end: ^!
+    tokens:
+      - name
+  explicit-route:
+    match: ^ip (route) (\S+) (\S+)
+    tokens:
+      - name
+      - prefix
+      - destination

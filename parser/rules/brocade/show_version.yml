@@ -1,0 +1,104 @@
+---
+command: show version
+objects:
+  chassisType:
+    match: ^HW: (.*)
+  managementModule:
+    start: ^\s*SL (M\d+): (.*) \(Serial #: (\S+),\s*Part #: (\S+)\)
+    end: ^\s*===
+    tokens:
+      - name
+      - serialNo
+      - partNo
+    lastIsNext: 0
+    properties:
+      '^Boot\s+: Version (\S+)':
+        tokens:
+          - bootVersion
+      '^Monitor\s*: Version (\S+)':
+        tokens:
+          - monitorVersion
+      '^IronWare\s*: Version (\S+)':
+        tokens:
+          - ironWareVersion
+      '^Board ID : (\d+) MBRIDGE Reversion : (\d+)':
+        tokens:
+          - boardId
+          - mbridgeReversion
+      '^(\d+) \wHz.*processor':
+        tokens:
+          - processorSpeed
+      '^(\d+) \wB DRAM':
+        tokens:
+          - installedMemory
+      '^(\d+) \wB Boot Flash \((\S+)\), (\d+) MB':
+        tokens:
+          - bootFlashSize
+          - something
+          - somethingElse
+  switchFabricModule:
+    match: ^(\S+) Switch Fabric Module (\d+) \(Serial #: (\S+),\s*Part #: (\S+)\)
+      tokens:
+        - modelName
+        - name
+        - serialNo
+        - partNo
+  backplane:
+    match: ^(Backplane) \(Serial \#: (\S+),\s*Part #: (\S+)\)
+    tokens:
+      - name
+      - serialNo
+      - partNo
+  lineCard:
+    start: ^SL (\d+): (.*) \(Serial \#: (\S+), Part \#: (\S+)\)
+    end: ^\s*===
+    tokens:
+      - slotNumber
+      - description
+      - serialNo
+      - partNo
+    lastIsNext: 0
+    properties:
+      '^Boot\s+: Version (\S+)':
+        tokens:
+          - bootVersion
+      '^Monitor\s*: Version (\S+)':
+        tokens:
+          - monitorVersion
+      '^IronWare\s*: Version (\S+)':
+        tokens:
+          - ironWareVersion
+      '^Board ID : (\d+) MBRIDGE Reversion : (\d+)':
+        tokens:
+          - boardId
+          - mbridgeReversion
+      '^(\d+) \wHz MPC (\d+).*(\d+) \wHz bus\':
+        tokens:
+          - processorSpeed
+          - MPCmodel
+          - busSpeed
+      '^(\d+) \wB DRAM, (\d+) SRAM, (\d+) BRAM':
+        tokens:
+          - installedMemory
+          - installedSRAM
+          - installedBRAM
+      '^(\d+) \wB Boot Flash \((\S+)\), (\d+) MB':
+        tokens:
+          - bootFlashSize
+          - something
+          - somethingElse
+      '^Valid PBIF Version = (\S+),':
+        tokens:
+          - fpgaPBIFVersion
+      '^Valid XPP Version = (\S+),':
+        tokens:
+          - fpgaXPPVersion
+      '^Valid XGMAC Version = (\S+),':
+        tokens:
+          - fpgaXGMACVersion
+      '^(PPCR\d+): (\S+) entries CAM, (\S+) PRAM, (\S+) AGE RAM':
+        tokens:
+          - ppcRID
+          - camSize
+          - pramSize
+          - ageRamSize
